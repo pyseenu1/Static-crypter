@@ -1,0 +1,15 @@
+﻿Injection : the RunPE will inject in the select process.
+Antis : It will exit if it found the follow anti.
+Persistence : Block a process kill from the user.
+Mutex : Check if a process with same mutex exist, in this case it will exit.
+Bypass UAC : The process will get administrator rights.
+Stub AutoPump : The file will copy him itself and and random bytes until 80mb can be bypass some runtimes. Don't work with all files.
+Startup : Install the file and will run it at computer reboot.
+Hide Parent Folder : Will hide the folder created for startup.
+Hide File : Will hide the file created for startup.
+Exit at first execution : The file will exit at first execution after install it at startup.
+Remove ZoneID : It will delete zone identifier of the file, it can be the cause of some Windows's pop up.
+Backup Startup : If the startup is detected/deleted or fail it will give another luck to back at startup.
+File Binder : It will bind a file with the crypted file and run it.
+Custom code : If you're not an advanced user we don't recommand it.
+Encryption key : The file will be crypted with this key.

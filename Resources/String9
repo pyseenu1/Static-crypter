@@ -1,0 +1,5 @@
+﻿If your file don't work :
+- if you used itself inject for .NET2/4 try with RegAsm.
+- check your settings in the crypter and in your file.
+- Your file may don't be compactible with Static Crypt.
+For any issue contact the support.

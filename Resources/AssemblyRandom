@@ -1,0 +1,21 @@
+﻿using System.Reflection;
+using System.Windows.Forms;
+
+[assembly: AssemblyTitle("[TITLE]")]
+[assembly: AssemblyFileVersion("[VERSION]")] //0.0.0.0 format
+[assembly: AssemblyVersion("[VERSION]")] //0.0.0.0 format
+[assembly: AssemblyDescription("[DESCRPTION]")]
+[assembly: AssemblyCompany("[COPANY]")]
+[assembly: AssemblyProduct("[PRODUCT]")]
+[assembly: AssemblyCopyright("[COPYRIGHT]")]
+
+namespace ConsoleApp
+{
+    class Program
+    {
+         static void Main(string[] args)
+          {
+	MessageBox.Show("");
+           }
+      }
+}

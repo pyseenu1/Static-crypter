@@ -1,0 +1,5 @@
+﻿"itself" injection for .NET work for the most part of files but not for all assemblies.
+It was tested and work on : NanoCore, LuminosityLink, Imminent Monitor and many more.
+It don't work on Orcus or NjRAT.
+In the case where it won't work, see your settings if they're good then contact the dev to repport this, it will be added in the list.
+If you don't know if your settings are good contact the support team.

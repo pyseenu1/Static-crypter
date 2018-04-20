@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{279F2FD5-FA81-4B3E-BF54-4A5DCBA350E3}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>StaticCrypt4</AssemblyName>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Drawing">
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\System.Drawing\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.4">
+      <HintPath>C:\Users\pysen\Desktop\rypter\Static Crypt\Bunifu_UI_v1.4.dll</HintPath>
+    </Reference>
+    <Reference Include="MajyxScannerLib">
+      <HintPath>C:\Users\pysen\Desktop\rypter\Static Crypt\MajyxScannerLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management">
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\System.Management\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Management.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\Microsoft.CSharp\v4.0_4.0.0.0__b03f5f7f11d50a3a\Microsoft.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic">
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\Microsoft.VisualBasic\v4.0_10.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualBasic.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bloom.cs" />
+    <Compile Include="ChromeRadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Licence\Licence.cs" />
+    <Compile Include="MouseState.cs" />
+    <Compile Include="PrecisionTimer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RandomPool.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StaticCrypt4.Forms.Crypt\BuildFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaticCrypt4.Forms.Crypt\Call.cs" />
+    <Compile Include="StaticCrypt4.Forms.Crypt\CustomCodeFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaticCrypt4.Forms.Crypt\FileFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaticCrypt4.Forms.Crypt\Injections.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaticCrypt4.Forms.Crypt\SyntaxeColor.cs" />
+    <Compile Include="StaticCrypt4.Forms\CodeStoreFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaticCrypt4.Forms\CrypterFrmTab1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaticCrypt4.Forms\CryptingFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaticCrypt4.Forms\ExtraFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaticCrypt4.Forms\FrmClass.cs" />
+    <Compile Include="StaticCrypt4.Forms\HelpFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaticCrypt4.Forms\HomeFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaticCrypt4.Forms\ScannerFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaticCrypt4.Licensing\Banned.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaticCrypt4.Licensing\HWID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaticCrypt4.Licensing\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaticCrypt4.Licensing\NewSerial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaticCrypt4.Licensing\Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaticCrypt4.Properties\Settings.cs" />
+    <Compile Include="StaticCrypt4.Utilies\Crypt.cs" />
+    <Compile Include="StaticCrypt4.Utilies\FileUtils.cs" />
+    <Compile Include="StaticCrypt4.Utilies\FrameGIF.cs" />
+    <Compile Include="StaticCrypt4.Utilies\PackerNET.cs" />
+    <Compile Include="StaticCrypt4.Utilies\RuntimeLanguage.cs" />
+    <Compile Include="StaticCrypt4.Utilies\Scan.cs" />
+    <Compile Include="StaticCrypt4.Utilies\Utiles.cs" />
+    <Compile Include="StaticCrypt4.Utilies\VersionInfo.cs" />
+    <Compile Include="StaticCrypt4\BlogPost.cs" />
+    <Compile Include="StaticCrypt4\Broker.cs" />
+    <Compile Include="StaticCrypt4\BrokerSettings.cs" />
+    <Compile Include="StaticCrypt4\DialogTheme.cs" />
+    <Compile Include="StaticCrypt4\DnsClient.cs" />
+    <Compile Include="StaticCrypt4\Helpers.cs" />
+    <Compile Include="StaticCrypt4\HexPatching.cs" />
+    <Compile Include="StaticCrypt4\HttpClient.cs" />
+    <Compile Include="StaticCrypt4\LicenseType.cs" />
+    <Compile Include="StaticCrypt4\MainFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaticCrypt4\Program.cs" />
+    <Compile Include="ThemeContainer154.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ThemeControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ThemeControl154.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ThemeShare.cs" />
+    <Compile Include="ThirteenComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Resources\AssemblyRandom" />
+    <None Include="Resources\Aut2exe" />
+    <None Include="Resources\back_481" />
+    <None Include="Resources\bunifuFlatButton3.Iconimage" />
+    <None Include="Resources\bunifuGradientPanel1.BackgroundImage" />
+    <None Include="Resources\bunifuGradientPanel2.BackgroundImage" />
+    <None Include="Resources\bunifuImageButton1.Image" />
+    <None Include="Resources\bunifuTextbox1.BackgroundImage" />
+    <None Include="Resources\bunifuTextbox1.Icon" />
+    <None Include="Resources\bunifuTextbox2.BackgroundImage" />
+    <None Include="Resources\bunifuTextbox2.Icon" />
+    <None Include="Resources\ca77749" />
+    <None Include="Resources\can749" />
+    <None Include="Resources\code_" />
+    <None Include="Resources\code__" />
+    <None Include="Resources\Crypt_" />
+    <None Include="Resources\CS_Icon_Terms_And_Conditions" />
+    <None Include="Resources\forward-48" />
+    <None Include="Resources\help_" />
+    <None Include="Resources\help__" />
+    <None Include="Resources\help___" />
+    <None Include="Resources\Home_" />
+    <None Include="Resources\Home__" />
+    <None Include="Resources\Home___" />
+    <None Include="Resources\Home___1" />
+    <None Include="Resources\icondisplay" />
+    <None Include="Resources\load" />
+    <None Include="Resources\null" />
+    <None Include="Resources\R" />
+    <None Include="Resources\res" />
+    <None Include="Resources\Scan_" />
+    <None Include="Resources\search" />
+    <None Include="Resources\StaticNETPack" />
+    <None Include="Resources\String1" />
+    <None Include="Resources\String10" />
+    <None Include="Resources\String11" />
+    <None Include="Resources\String12" />
+    <None Include="Resources\String2" />
+    <None Include="Resources\String3" />
+    <None Include="Resources\String4" />
+    <None Include="Resources\String5" />
+    <None Include="Resources\String6" />
+    <None Include="Resources\String7" />
+    <None Include="Resources\String8" />
+    <None Include="Resources\String9" />
+    <None Include="Resources\upx" />
+    <None Include="Resources\user-128" />
+    <None Include="Resources\user-icollppn" />
+    <None Include="Resources\user-icon" />
+    <None Include="Resources\user-icondd" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Resources\StaticCrypt4.Properties.Resources.resources" />
+    <None Include="Resources\StaticCrypt4.Forms.CodeStoreFrm.resources" />
+    <EmbeddedResource Include="StaticCrypt4.Forms.Crypt\BuildFrm.resx">
+      <DependentUpon>BuildFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaticCrypt4.Forms\CryptingFrm.resx">
+      <DependentUpon>CryptingFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaticCrypt4\MainFrm.resx">
+      <DependentUpon>MainFrm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
